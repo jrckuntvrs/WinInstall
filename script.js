@@ -1,4 +1,4 @@
-const swiper = new Swiper('.main-slider', {
+  const swiper = new Swiper('.main-slider', {
 
   loop: true,
 
