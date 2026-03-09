@@ -119,17 +119,51 @@ html, body, .main-slider, section {
 }
 
 .brand-section{
-  background:#fffffff8;
   padding:40px 0;
 }
 
+/* Center the slider */
+.brand-slider{
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100%;
+}
+
+/* Sliding wrapper */
+.icon-wrapper{
+  display:flex;
+  align-items:center;
+  gap:40px;
+  animation: slideIcons 12s linear infinite;
+}
+
+.icon-slide{
+  flex:0 0 auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:0 10px;
+}
+
 .brand-logo{
-  max-height:50px;
+  max-height:60px;
   opacity:0.9;
-  transition:0.3s;
+  transition:0.5s;
 }
 
 .brand-logo:hover{
   opacity:1;
-  transform:scale(1.05);
+  transform:scale(1.1);
+}
+
+/* Animation */
+@keyframes slideIcons{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
 }
