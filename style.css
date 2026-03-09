@@ -1,5 +1,5 @@
 
-html, body, .main-slider, section {
+html, body, .main-slider, section, .main-content {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -113,13 +113,12 @@ html, body, .main-slider, section {
   }
   .slide-content{
   margin-top: 25%;
-}
-
-
+  }
 }
 
 .brand-section{
   padding:40px 0;
+  height: 0;
 }
 
 /* Center the slider */
@@ -167,3 +166,28 @@ html, body, .main-slider, section {
     transform:translateX(-50%);
   }
 }
+.main-content{
+  margin-top: 7%;
+}
+@media (max-width: 1300px){
+  .main-content{
+    margin-top: 12%;
+  }
+}
+@media (max-width: 900px){
+  .main-content{
+    margin-top: 12%;
+  }
+}
+@media (max-width: 700px){
+  .main-content{
+    margin-top: 30%;
+  }
+}
+@media (max-width: 400px){
+  .main-content{
+    margin-top: 50%;
+  }
+}
+
+
