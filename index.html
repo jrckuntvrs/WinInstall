@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
      <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>EZWinInstall</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>EZWinInstaller</title>
   </head>
   <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
@@ -34,7 +34,7 @@
 
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active" href="#index">Home</a>
         </li>
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
@@ -64,17 +64,64 @@
   </div>
 </nav>
 
-<!-- Main Content-->
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="BACKGROUND (1).png" class="d-block w-100" alt="...">
+<!-- Slider main container -->
+<!-- Swiper Slider -->
+<div class="swiper main-slider">
+  
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide slider-bg-position " style="background-image:url('install1.jpg')">
+      <div class="slide-content">
+        <h2>Easy Windows Installation</h2>
+        <p>Easy Windows installation tutorials for beginners.</p>
+      </div>
     </div>
+
+    <div class="swiper-slide slider-bg-position" style="background-image:url('BACKGROUND (1).png')">
+      <div class="slide-content">
+        <h2>Learn Windows Installation</h2>
+        <p>Learn how to install Windows quickly and safely.</p>
+      </div>
+    </div>
+
   </div>
+
+  <!-- pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- navigation -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
 </div>
+
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.main-slider', {
 
-  
+  loop: true,
+
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+
+  speed: 1200,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+  </script>
   </body>
 </html>
