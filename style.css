@@ -1,5 +1,5 @@
 
-html, body, .main-slider, section, .main-content {
+html, body, .main-slider, section, .main-content main {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -210,3 +210,30 @@ html, body, .main-slider, section, .main-content {
   margin-bottom: 0;
 }
 
+.window-content .container{
+  padding-top: 5%;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2;
+}
+.card {
+      background: rgba(255,255,255,0.05);
+      border: none;
+      border-radius: 10px;
+      transition: 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .step-number {
+      font-size: 20px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
