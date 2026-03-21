@@ -80,11 +80,15 @@ html, body, .main-slider, section, .main-content {
 }
 
 @media screen and (max-width: 1108px) {
+.swiper-slide .container{
+  margin-top: 25%;
+}
 .swiper-slide .container h2{
   font-weight: 900;
   font-size: 50px;
 }
 }
+
 @media screen and (max-width: 768px) {
 .swiper-slide .container h2{
   font-weight: 900;
