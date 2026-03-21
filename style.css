@@ -32,8 +32,6 @@ html, body, .main-slider, section, .main-content {
   display: flex;
   align-items: center;
 }
-/* Default background (Desktop) */
-/* Slider height */
 .main-slider {
   height: 100vh;
 }
@@ -62,75 +60,39 @@ html, body, .main-slider, section, .main-content {
   left:0;
   width:100%;
   height:100%;
+  background: rgba(0,0,0,0.4);
 }
 
 /* Content */
-.display-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;            /* 👈 increase space (adjust this) */
-  margin-top: 15%;
-}
-
-/* TEXT */
-.slide-content {
-  background: rgba(172, 168, 168, 0.6);
-  position: relative;
-  padding: 70px 40px;
-  border-radius: 10px;
-  color: #fff;
-}
-.slide-content h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.slide-content p {
-  font-size: 15px;
-  line-height: 1.7;
-  opacity: 0.9;
-  max-width: 420px;
-  color:#000;
-  font-weight: bold;
+.swiper-slide .container{
+  position:relative;
+  margin-top: 13%;
   text-align: justify;
+}
+.swiper-slide .container h2{
+  font-weight: 900;
+  font-size: 60px;
+}
+.swiper-slide .container h3{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media screen and (max-width: 1108px) {
-  .display-content {
-    margin-top: 25%;
-    padding: 0px;
-  }
-  .image-display img {
-    width: 65%;
-    height: 100%;
-  }
-  .image-display {
-    text-align: center;
-  }
+.swiper-slide .container h2{
+  font-weight: 900;
+  font-size: 50px;
+}
 }
 @media screen and (max-width: 768px) {
-  .display-content {
-    flex-direction: column;
-    text-align: center;
-    margin-top: -5%;
-    gap: 20px;            
-  }
-
-  .slide-content {
-    align-items: center;
-    text-align: center;
-    padding: 15px 30px;
-  }
-  .image-display {
-    text-align: center;
-  }
-  .image-display img {
-    width: 90%;
-  }
+.swiper-slide .container h2{
+  font-weight: 900;
+  font-size: 35px;
 }
-
+.swiper-slide .container{
+  text-align: center;
+}
 
 /* Navigation buttons */
 .swiper-button-next,
