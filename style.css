@@ -16,6 +16,10 @@ html, body, .main-slider, section, .main-content {
 .nav-link:hover {
   color: #b1adad !important;
 }
+.nav-link.active {
+  color: #ffffff !important;
+  font-weight: 700;
+}
 .btn{
   color: #fcfcfc;
 }
