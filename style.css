@@ -203,4 +203,10 @@ html, body, .main-slider, section, .main-content {
   height: 220px;
   object-fit: cover;
 }
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
