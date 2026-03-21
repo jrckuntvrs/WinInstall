@@ -124,8 +124,11 @@ html, body, .main-slider, section, .main-content {
 }
 
 .brand-section{
-  padding:40px 0;
+  padding: 7%;
   height: 0;
+}
+.brand-section h2{
+ text-align: justify;
 }
 
 /* Center the slider */
@@ -173,17 +176,14 @@ html, body, .main-slider, section, .main-content {
     transform:translateX(-50%);
   }
 }
-.main-content{
-  padding-top: 7%;
-}
 @media (max-width: 1300px){
   .main-content{
-    padding-top: 12%;
+    padding-top: 5%;
   }
 }
 @media (max-width: 900px){
   .main-content{
-    padding-top: 23%;
+    padding-top: 20%;
   }
 }
 @media (max-width: 700px){
@@ -196,5 +196,11 @@ html, body, .main-slider, section, .main-content {
     padding-top: 50%;
   }
 }
-
+.main-content{
+  margin-top: 5%;
+}
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
 
